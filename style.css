@@ -1,0 +1,232 @@
+* {
+  box-sizing:border-box;
+}
+
+body {
+  font-family: 'Tenor Sans', Verdana, sans-serif;
+  font-size: 18px;
+  color: #161616;
+}
+/* эксперименты с позишн */
+
+.position-parent {
+  width: 200px;
+  height: 300px;
+  background: pink;
+  margin: 50px;
+  position: relative;
+}
+
+.position-child {
+width: 100px;
+height: 300px;
+background: violet;
+position: relative;
+left: 100px;
+top: 100px;
+}
+
+.position-child-absolute {
+  width: 100px;
+  height: 300px;
+  background: grey;
+  position: absolute;
+  left: 100px;
+  top: 100px;
+}
+
+
+.position-child-fixed {
+  width: 100px;
+  height: 300px;
+  background: green;
+  position: fixed;
+  right: 100px;
+  top: 100px;
+}
+
+
+
+.position-child-z-index {
+  width: 100px;
+  height: 300px;
+  background: purple;
+  position: absolute;
+
+}
+
+.z-index-1 {
+  left: 50px;
+  top: 50px;
+  background: red;
+  z-index: 3;
+}
+
+.z-index-2 {
+  left: 100px;
+  top: 100px;
+  background: green;
+  z-index: 2;
+}
+
+.z-index-3 {
+  left: 150px;
+  top: 150px;
+  background: blue;
+  z-index: 1;
+}
+
+.font {
+  padding: 100px 0;
+}
+
+.font-size {
+font-size: 30px;
+}
+
+.font-weight {
+  font-weight: 700px;
+}
+
+.font-style {
+  font-style: italic;
+}
+
+.font-variant {
+  font-variant: small-caps;
+}
+
+
+.text-shadow {
+  text-shadow: 5px 5px 1px #75b7ce;
+}
+
+
+
+
+
+
+
+/* Начала домашнее задание тут */
+
+.header-parent {
+  width: 100%;
+  height: 10%;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin-bottom: 30px;
+  position: fixed;
+  background: #f1f9f8;
+  z-index: 2;
+}
+
+.header-child {
+  width: 35%;
+  height: 30px;
+  position: absolute;
+  right: 20px;
+  top: 40px;
+}
+
+.main-side {
+  width: 90%;
+  height: 65%;
+  padding-right: 220px;
+  position:relative;
+}
+
+.left-side {
+  width: 100%;
+  height: 70%;
+  padding-top: 10%;
+}
+
+
+.footer {
+  width: 100%;
+  height: 20%;
+  margin-top: 300px;
+  margin-bottom: 80px;
+  text-align: center;
+  font-style: italic;
+  font-size: small;
+}
+
+.article1 {
+  width: 80%;
+  height: 200px;
+  padding-top: 0%;
+  padding-left: 5%;
+  margin-top: 5%;
+  margin-right: 5%;
+  margin-bottom: 8%;
+  text-align: justify;
+  overflow: scroll;
+}
+
+.article2 {
+  width: 80%;
+  height: 100px;
+  padding-top: 10px;
+  padding-left: 5%;
+  margin-top: 8%;
+  margin-right: 5%;
+  text-align: justify;
+  overflow: scroll;
+}
+
+
+.aside-banner {
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 200px;
+  height: 200px;
+}
+
+
+
+.navigation {
+  width: 60%;
+  height: 70px;
+  padding-top: 100px;
+  margin-bottom: 250px;
+}
+
+
+.articleFull-2 {
+  margin-bottom: 100px;
+}
+
+
+.h2-font {
+  font-family: 'Marmelad', Verdana, sans-serif;
+  font-size: 42px;
+  color: #cc8a75;
+  text-shadow: 10px 10px 5px hsla(154, 17%, 65%, 0.5);
+}
+
+.h2-font-article {
+  font-family: 'Marmelad', Verdana, sans-serif;
+  font-size: 30px;
+  color: #ca6e35;
+}
+
+.aside-banner {
+position: absolute;
+width: 200px;
+height: 500px;
+right: 0;
+top: 150px;
+background: #9fe0ba;
+z-index: 1;
+}
+
+
+.bannerpart {
+  width: 50px;
+  height: 250px;
+  padding: 50px;
+  margin: 15px;
+  overflow: visible;
+}

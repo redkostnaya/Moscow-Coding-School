@@ -110,6 +110,9 @@ font-size: 30px;
 /* Начала домашнее задание тут */
 
 .header-parent {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   width: 100%;
   height: 10%;
   padding-left: 20px;
@@ -123,7 +126,6 @@ font-size: 30px;
 .header-child {
   width: 35%;
   height: 30px;
-  position: absolute;
   right: 20px;
   top: 40px;
 }
@@ -143,13 +145,17 @@ font-size: 30px;
 
 
 .footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   width: 100%;
-  height: 20%;
+  height: 50px;
   margin-top: 300px;
-  margin-bottom: 80px;
   text-align: center;
   font-style: italic;
   font-size: small;
+  background-color: #c8e2e2;
+  padding: 0 30px;
 }
 
 .article1 {
@@ -229,4 +235,403 @@ z-index: 1;
   padding: 50px;
   margin: 15px;
   overflow: visible;
+}
+
+.link1 {
+transition: color 2s ease, font-size 2s ease-out;
+}
+
+.link1:hover {
+  background-color: #F4C8C8;
+  text-decoration: none;
+  color: white;
+  font-size: 60px;
+}
+
+.link1-2:hover {
+  background-color: #F4C8C8;
+  text-decoration: none;
+  color: white;
+}
+
+.link2:hover {
+  background-color: #F4C8C8;
+}
+
+.link3:hover {
+  background-color: #F4C8C8;
+}
+
+.link4:hover {
+  background-color: #F4C8C8;
+}
+
+.link5:hover {
+  border: 3px dashed green;
+  text-decoration: none;
+
+}
+
+
+/* Бэкграунд имэдж  */
+
+
+.backgroundImgSvg {
+  width: 700px;
+  height: 100px;
+  margin: 10px;
+  background-image: url("img/cherry.svg");
+  background-repeat: repeat;
+}
+
+
+.backgroundImgImg {
+  width: 300px;
+  height: 100px;
+  margin: 10px;
+  background-image: url("img/img3.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+
+
+.flex-container {
+display: flex;
+flex-wrap: wrap;
+flex-direction: row;
+height: 400px;
+margin-top: 50px;
+margin-bottom: 200px;
+background-color: blue;
+border: 1px solid red;
+justify-content: space-between;
+align-items: center;
+}
+
+.flex-element {
+
+}
+
+
+.flex-element1 {
+  background-color: green;
+  width: 300px;
+  order: 5;
+}
+
+.flex-element2 {
+  background-color: pink;
+  width: 300px;
+  order: 3;
+}
+
+.flex-element3 {
+  background-color: yellow;
+  width: 300px;
+  order: 1;
+  flex-grow: 5;
+}
+
+.flex-element4 {
+  background-color: purple;
+  width: 300px;
+  order: 2;
+}
+
+
+.flex-element5 {
+  background-color: grey;
+  width: 300px;
+  order: 4;
+}
+
+
+.background-color{
+  width: 200px;
+  height: 200px;
+  background-color: #bea8ce;
+  position: relative;
+  margin: 50px;
+  margin-bottom: 100px;
+}
+
+.background-color-child {
+  width: 200px;
+  height: 200px;
+  position: absolute;
+  background-color: rgba(190, 168, 206, 0.53);
+  background-image: url(img/donuts.svg);
+  background-size: 100px 100px;
+  background-repeat: no-repeat;
+  background-position: center;
+  border: 1px solid #bea8ce;
+  top: 50px;
+  left:50px;
+}
+
+.liner-gradient{
+  width: 200px;
+  height: 200px;
+  margin: 50px;
+background-image: linear-gradient(pink, black);
+
+}
+
+
+.liner-gradient1 {
+  width: 200px;
+  height: 200px;
+  margin: 50px;
+  background-image: linear-gradient(to top left, pink, black);
+}
+
+
+.liner-gradient2{
+  width: 200px;
+  height: 200px;
+  margin: 50px;
+  background-image: linear-gradient(90deg, pink, black);
+}
+
+
+.liner-gradient3 {
+  width: 200px;
+  height: 200px;
+  margin: 50px;
+  background-image: linear-gradient(purple, red, blue, black);
+}
+
+.liner-gradient4 {
+  width: 200px;
+  height: 200px;
+  margin: 50px;
+  background-image: linear-gradient(pink, red 10%, blue 20%, black);
+  }
+
+
+  .radial-gradient {
+  width: 500px;
+  height: 200px;
+  margin: 50px;
+  background-image: radial-gradient(blue, black);
+  }
+
+  .radial-gradient1 {
+  width: 500px;
+  height: 200px;
+  margin: 50px;
+  background-image: radial-gradient(at left bottom, pink, black);
+  }
+
+
+  .radial-gradient2 {
+  width: 500px;
+  height: 200px;
+  margin: 50px;
+  background-image: radial-gradient(circle, blue, black);
+  }
+
+  .gradient-generator{
+    width: 500px;
+    height: 200px;
+    margin: 50px;
+    background-image: linear-gradient(45deg, #febbbb 50%,#ff5c5c 88%);
+  }
+
+  .box-shadow {
+    width: 100px;
+    height: 100px;
+    margin: 50px;
+    box-shadow: 10px 15px 5px 1px black;
+    background-color: rgba(255, 255, 255, 0.5);
+  }
+
+
+  .box-shadow-inset {
+    width: 100px;
+    height: 100px;
+    margin: 50px;
+    box-shadow: inset 10px 15px 5px 1px blue;
+    background-color: rgba(255, 255, 255, 0.5);
+  }
+
+
+  .calc-parent {
+height: 300px;
+margin-left: -10px;
+margin-right: -10px;
+margin-bottom: 200px;
+display: flex;
+border: 1px solid blue;
+  }
+
+
+  .calc-child {
+width: calc(50% - 20px);
+margin: 0 10px;
+background-color: pink;
+  }
+
+  .body {
+
+  }
+
+.calc-parent-inner {
+display: flex;
+
+}
+
+
+
+.calc-parent-part {
+  display: flex;
+  height: 200px;
+  border: 1px solid grey;
+}
+
+
+.calc-child-part {
+  width: calc(100%/7 - 10%);
+  background-color: green;
+  margin: 0 5px;
+}
+
+.calc-parent2 {
+  display: flex;
+  height: 200px;
+  border: 1px solid red;
+  margin: 50px;
+
+}
+
+
+
+
+.calc-child-responsive {
+  width: calc(100% - 50px + 20px);
+  background-color: yellow;
+}
+
+.calc-child-fixed {
+  width: 50px;
+  margin-left: 20px;
+  background-color: blue;
+}
+
+
+
+.hover {
+  width:100px;
+  height: 100px;
+  margin: 20px;
+  background: red;
+}
+
+.hover:hover {
+  background-color: blue;
+  width: 50px;
+  height: 50px;
+  border: 1px solid black;
+}
+
+
+.link-hover {
+  color: green;
+  font-size: 36px;
+}
+
+.link-hover:hover {
+  color: grey;
+  text-decoration: underline;
+}
+
+
+.focus {
+outline: 0;
+height: 50px;
+width: 150px;
+border: 1px solid blue;
+border-radius: 10px;
+padding: 10px;
+}
+
+.focus:focus {
+  box-shadow: inset 0 0 15px 0 rgba(0, 0, 0, 0.8)
+}
+
+
+.pseudu-classes-parent {
+  padding: 20px;
+  border: 1px dashed black;
+  margin: 20px;
+}
+
+.pseudu-classes-child {
+  height: 20px;
+  margin: 50px;
+  border: 1px solid red;
+}
+
+.pseudu-classes-child:first-child {
+  background-color: grey;
+  margin-top: 0;
+}
+
+.pseudu-classes-child:last-child {
+  background-color: pink;
+  margin-bottom: 0;
+}
+
+.pseudu-classes-child:nth-child(2) {
+  border-color: yellow;
+}
+
+
+.pseudu-classes-child:nth-child(2n) {
+  background-color: yellow;
+}
+
+.pseudu-classes-child:nth-child(odd) {
+  background-color: pink;
+}
+
+.pseudo-elements:before {
+  content: 'Я впереди всего текста';
+  color: red;
+}
+
+.pseudo-elements:after {
+  content: 'Я после всего текста';
+  color: blue;
+}
+
+
+
+.transition-color {
+  font-size: 50px;
+  color: black;
+  transition: color 1s ease 1s, font-size 2s ease-out;
+}
+
+.transition-color:hover {
+  color: red;
+  font-size: 45px;
+}
+
+
+
+.transition-left {
+  width: 100px;
+  height: 100px;
+  border: 1px solid black;
+  position: relative;
+  transition: left 3s ease-in 1s, width 2s linear;
+  left: 0;
+}
+
+.transition-left:hover {
+  left: 200px;
+  width: 300px;
 }

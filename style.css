@@ -138,6 +138,8 @@ font-size: 30px;
 }
 
 .left-side {
+  display: flex;
+  flex-direction: column;
   width: 100%;
   height: 70%;
   padding-top: 10%;
@@ -161,24 +163,57 @@ font-size: 30px;
 .article1 {
   width: 80%;
   height: 200px;
-  padding-top: 0%;
   padding-left: 5%;
+  padding-right: 5%;
   margin-top: 5%;
   margin-right: 5%;
-  margin-bottom: 8%;
+  margin-bottom: 5%;
   text-align: justify;
   overflow: scroll;
+  background-image: linear-gradient(#84bb86, rgba(249, 192, 247, 0.55));;
+
 }
 
 .article2 {
   width: 80%;
-  height: 100px;
+  height: 200px;
   padding-top: 10px;
   padding-left: 5%;
   margin-top: 8%;
   margin-right: 5%;
   text-align: justify;
   overflow: scroll;
+  background-image: url(img/computer-2.png);
+  background-repeat: no-repeat;
+  background-position: right;
+}
+
+.article-3 {
+  width: 80%;
+  height: 400px;
+  padding-top: 10px;
+  padding-left: 5%;
+  margin-top: 8%;
+  margin-right: 5%;
+  text-align: justify;
+  overflow: scroll;
+  background-image: url(img/social.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+.article-4 {
+  width: 80%;
+  height: 300px;
+  padding-top: 10px;
+  padding-left: 5%;
+  margin-top: 8%;
+  margin-right: 5%;
+  text-align: justify;
+  background-image: url(img/spinner.jpg);
+  background-size: 300px 200px;
+  background-repeat: no-repeat;
+  background-position: right;
 }
 
 
@@ -194,14 +229,15 @@ font-size: 30px;
 
 .navigation {
   width: 60%;
-  height: 70px;
+  height: 100px;
   padding-top: 100px;
-  margin-bottom: 250px;
+  margin-bottom: 300px;
 }
 
 
 .articleFull-2 {
   margin-bottom: 100px;
+  margin-top: 100px;
 }
 
 
@@ -634,4 +670,110 @@ padding: 10px;
 .transition-left:hover {
   left: 200px;
   width: 300px;
+}
+
+
+
+
+/*новое дз*/
+
+
+.link7:hover {
+  background-color: #F4C8C8;
+}
+.gallery {
+  padding: 100px;
+}
+
+.wrap {
+  display: flex;
+  flex-wrap: wrap;
+
+}
+
+.gallery-pic {
+  height: 200px;
+  width: 300px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  box-shadow: 15px 10px 10px 0 rgba(165,83,87,.85);;
+  margin: 20px;
+
+}
+
+.footer2 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: 50px;
+  margin-top: 100px;
+  text-align: center;
+  font-style: italic;
+  font-size: small;
+  background-color: #c8e2e2;
+  padding: 10px 30px;
+}
+
+
+.one {
+  background-image: url(img/pic-1.jpg);
+}
+
+
+.two {
+  background-image: url(img/pic-2.jpg);
+}
+
+.three {
+  background-image: url(img/pic-3.jpg);
+}
+
+.four {
+  background-image: url(img/pic-4.jpg);
+}
+
+.five {
+  background-image: url(img/pic-5.jpg);
+}
+
+.six {
+  background-image: url(img/pic-6.jpg);
+}
+
+.seven {
+  background-image: url(img/pic-7.jpg);
+}
+
+.eight {
+  background-image: url(img/pic-8.jpg);
+}
+
+.nine {
+  background-image: url(img/pic-9.jpg);
+}
+
+.ten {
+  background-image: url(img/pic-10.jpg);
+}
+
+.eleven {
+  background-image: url(img/pic-11.jpg);
+}
+
+.tvelve {
+  background-image: url(img/pic-12.jpg);
+}
+
+.thirteen {
+  background-image: url(img/pic-13.jpg);
+}
+
+.fourteen {
+  background-image: url(img/pic-14.jpg);
+}
+
+.fifteen {
+  background-image: url(img/pic-15.jpg);
 }

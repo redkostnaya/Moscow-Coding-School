@@ -1,3 +1,5 @@
+@import url("grid.css");
+
 * {
   box-sizing:border-box;
 }
@@ -776,4 +778,209 @@ padding: 10px;
 
 .fifteen {
   background-image: url(img/pic-15.jpg);
+}
+
+
+.transform-parent {
+  display: flex;
+  margin: 50px;
+}
+
+
+.translate-parent {
+  width: 300px;
+  height: 200px;
+  background-color: grey;
+  margin: 100px;
+  position: relative;
+}
+
+.translate-child {
+  width: 100%;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0.5);
+  border: 2px solid black;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+
+.translate-child1 {
+  transform: translate(100px, 100px);
+}
+
+.translate-child2 {
+  transform: translate(-50px, -80px);
+}
+
+
+
+.rotate-parent {
+  width: 300px;
+  height: 200px;
+  background-color: grey;
+  margin: 100px;
+  position: relative;
+}
+
+.rotate-child {
+  width: 100%;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0.5);
+  border: 2px solid black;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+
+.rotate-child1 {
+transform: rotate(100deg);
+}
+
+
+.rotate-child2 {
+transform: rotate(-30deg);
+}
+
+
+.scale-parent {
+  width: 300px;
+  height: 200px;
+  background-color: grey;
+  margin: 100px;
+  position: relative;
+}
+
+.scale-child {
+  width: 100%;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0.5);
+  border: 2px solid black;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.scale-child1 {
+transform: scale(2.5);
+}
+
+
+.scale-child2 {
+transform: scale(-1,.5);
+}
+
+
+
+
+.skew-parent {
+  width: 300px;
+  height: 200px;
+  background-color: grey;
+  margin: 100px;
+  position: relative;
+}
+
+.skew-child {
+  width: 100%;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0.5);
+  border: 2px solid black;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.skew-child1 {
+transform: skew(-70deg)
+}
+
+
+.skew-child2 {
+transform: skew(0, 50deg)
+}
+
+
+.transform-origin-parent {
+  width: 300px;
+  height: 200px;
+  background-color: grey;
+  margin: 100px;
+  position: relative;
+}
+
+.transform-origin-child {
+  width: 100%;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0.5);
+  border: 2px solid black;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transform: rotate(45deg);
+  transform-origin: 100% 50%;
+}
+
+
+.animation1 {
+width: 300px;
+height: 300px;
+animation-name: animation-bg-color;
+animation-duration: 5s;
+animation-delay: 3s;
+border: 2px solid black;
+background-color: green;
+animation-iteration-count: infinite;
+}
+
+
+.animation1:hover {
+  animation-play-state: paused;
+}
+
+@keyframes animation-bg-color {
+  from {
+    background-color: yellow;
+    transform: translate(0, 0);
+    width: 300px;
+    box-shadow: 0 0 5px rgba(255,0,255,1);
+  }
+
+  to {
+    background-color: pink;
+    transform: translate(200px, 300px);
+    width: 500px;
+    box-shadow: 0 0 5px rgba(255,0,255,.5);
+  }
+}
+
+
+.animation2 {
+  width: 100px;
+  height: 100px;
+  background-color: violet;
+  opacity: .8;
+  animation-name: animation-rotate;
+  animation-duration: 10s;
+  animation-timing-function: linear;
+  margin: 50px;
+  animation-iteration-count: 2;
+  animation-direction: alternate-reverse;
+}
+
+@keyframes animation-rotate {
+  0% {
+  transform: rotate(0);
+  }
+
+  50% {
+    transform: rotate(-90deg);
+  }
+
+
+  100% {
+  transform: rotate(360deg);
+  }
 }
